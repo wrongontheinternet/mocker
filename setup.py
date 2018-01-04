@@ -11,4 +11,16 @@ setup(
     author_email='unknown@jto.id.au',
     url='https://github.com/tonybaloney/mocker/',
     packages=['mocker'],
-    scripts=['scripts/mocker'])
+    scripts=['scripts/mocker'],
+    install_requires=[
+        'requests',
+        'docopt',
+        'terminaltables',
+        'nsenter',
+        'snakeoil',
+        'pychroot',
+        'cgroups',
+        'pyroute2',
+        'colorama'
+    ]
+)
