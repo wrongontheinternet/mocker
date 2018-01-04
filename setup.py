@@ -8,7 +8,7 @@ setup(
     version=mocker.__version__,
     description='Python example implementation of the Docker engine',
     author='Anthony Shaw',
-    author_email='gward@python.net',
-    url='https://www.python.org/sigs/distutils-sig/',
-    packages=['distutils', 'distutils.command'],
+    author_email='unknown@jto.id.au',
+    url='https://github.com/tonybaloney/mocker/',
+    packages=['mocker'],
     scripts=['scripts/mocker'])
