@@ -4,6 +4,7 @@ import json
 import tarfile
 from mocker import _base_dir_
 from .base import BaseDockerCommand
+from .orderedset import OrderedSet
 
 
 class PullCommand(BaseDockerCommand):
@@ -50,7 +51,7 @@ class PullCommand(BaseDockerCommand):
 
         # fetch each unique layer
         layer_sigs = [layer['blobSum'] for layer in manifest['fsLayers']]
-        unique_layer_sigs = set(layer_sigs)
+        unique_layer_sigs = OrderedSet(layer_sigs)
 
         # setup a directory with the image contents
         contents_path = os.path.join(dl_path, 'contents')
