@@ -2,7 +2,7 @@ requests
 docopt
 terminaltables
 nsenter
-pychroot
+pychroot==0.9.18
 cgroups
 pyroute2
 colorama
